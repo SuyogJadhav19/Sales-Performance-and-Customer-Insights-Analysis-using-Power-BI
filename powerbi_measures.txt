@@ -1,0 +1,12 @@
+Total Sales = SUM(Sales[Sales])
+
+Total Profit = SUM(Sales[Profit])
+
+Total Orders = DISTINCTCOUNT(Sales[Order ID])
+
+Profit Ratio =
+DIVIDE(
+    SUM(Sales[Profit]),
+    SUM(Sales[Sales]),
+    0
+)
